@@ -1,0 +1,17 @@
+
+#include "../include/model.h"
+
+
+struct active {
+	unsigned char *name;
+	void (*activefunc)(unsigned char *name, unsigned char *data);
+};
+
+struct active_list{
+	unsigned char *name;
+	struct active *func;
+	struct active_list *Next;
+};
+
+typedef  u32 _register_active_(unsigned char *name,struct active *active);
+typedef  struct active * _find_active_(unsigned char *name);

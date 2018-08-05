@@ -1,0 +1,3 @@
+#include <vector>
+
+#include "caffe/layers/new_conv_layer.hpp"

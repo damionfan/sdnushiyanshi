@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include "../include/model.h"
+
+
+
+
+struct active_list{
+	u32 name[NAME_LIST];
+	u32 *activefunc(u32 *name,u32 *data);
+	struct active_list *Next;
+};
+
+struct active_list global_activelist;
+
+u32 insert_activefunc(u32 *name,u32 *activefunc(u32 *name,u32 *data)){
+	struct active_list* insert_active = &global_activelist;
+	while(insert_active)
+		insert_active = insert_active->Next;
+	insert_active = (struct active_list*)malloc(sizeof(struct active_list));
+	insert_active->name = name;
+	insert_active->activefunc = activefunc;
+	insert_active->Nest = NULL;
+	return 0;
+}

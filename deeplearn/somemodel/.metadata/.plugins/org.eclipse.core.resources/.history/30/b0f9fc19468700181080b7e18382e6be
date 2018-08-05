@@ -1,0 +1,5 @@
+
+#include "../include/model.h"
+
+typedef  u32 _register_active_(unsigned char *name,struct active *active);
+typedef  struct active * _find_active_(unsigned char *name);

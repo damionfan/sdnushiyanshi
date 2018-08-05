@@ -1,0 +1,14 @@
+#include "../incldue/active.h"
+
+__global__ void ReluForward(const float n, const unsigned float *in, const unsigned float *out, const unsigned float negative_slope){
+	for(int i = blockIdx.x * blockDim.x + threadIdx.x;i<n;i+=blockIdx.x*dlockDim.x){
+		out[i] = in[i]>0 ? in[i]:in[i]*negative_slope;
+	}
+}
+
+void ReluLayer_Forward(const unsigned char *in,const unsigned char *out){
+	unsigned float *data_gpu,*out_gpu;
+	unsigned float n_gpu;
+
+
+}

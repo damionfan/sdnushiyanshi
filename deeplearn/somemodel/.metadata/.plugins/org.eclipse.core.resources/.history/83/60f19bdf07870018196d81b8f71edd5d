@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include "../include/model.h"
+
+
+
+
+struct active_list{
+	char *name;
+	u32 * activefunc (u32 *,u32 *);
+	struct active_list *Next;
+};
+
+struct active_list global_activelist;
+
+u32 insert_activefunc(struct active_list* active){
+	struct active_list* insert_active = &global_activelist;
+	while(insert_active)
+		insert_active = insert_active->Next;
+	insert_active = (struct active_list*)malloc(sizeof(struct active_list));
+	insert_active->Next = active;
+	return 0;
+}
+
+u32 active(u32 *name,u32 *data){
+	printf("name = %s\n",name);
+	printf("data = %s\n",data);
+}
+struct active_list frist = {
+		.name = "11",
+		.activefunc=active,
+		.Next = NULL,
+};
+u32 main(){
+	u32 name[NAME_LIST] = "faydknibuj";
+	u32 *data = "shuaihnisua1111111111";
+	insert_activefunc(frist);
+	u32 *activefunc = global_activelist.Next->activefunc;
+	activefunc(name,data);
+	return 0;
+}

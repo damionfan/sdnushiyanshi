@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;layers/new_layers.cu&apos;" deleteContents="false" description="Delete resource &apos;layers/new_layers.cu&apos;" element1="/layers/new_layers.cu" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1531982590203"/>
+</session>

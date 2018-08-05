@@ -1,0 +1,81 @@
+#include "../include/active.h"
+
+
+struct active {
+	unsigned char *name;
+	void (*activefunc)(unsigned char *name, unsigned char *data);
+};
+
+struct active_list{
+	unsigned char *name;
+	struct active *func;
+	struct active_list *Next;
+};
+struct active_list global_active_list;
+//注册激活函数
+static u32 _register_active_(unsigned char *name,struct active *active){
+	//首先找到激活函数结构体列表的尾端
+	struct active_list *tail,*p;
+	unsigned int i;
+	tail = &global_active_list;
+	while(tail->Next){
+		tail = tail->Next;
+		//printf("%d\n",i);
+		//i++;
+	}
+	if(tail->Next == NULL){
+	//构建激活函数列表结构体空间
+	p = (struct active_list*)malloc(sizeof(struct active_list));
+	tail->Next = p;
+	tail = tail->Next;
+	tail->func = active; //传进所注册激活函数结构体
+	if(name == active->name)
+		tail->name = name;
+	else {
+	printf("您输入的激活函数名称有误请核实！\n 1. %s\t 2.%s\n",name,active->name);
+	scanf("%d",&i);
+	if(i == 1) p->name = name;
+	else tail->name = active->name;
+	}
+	tail->Next = NULL;
+	return 1;
+	} else {
+		printf("出现链表错误。\n");
+		return 0;
+	}
+}
+
+//查找激活函数
+static struct active * _find_active_(unsigned char *name){
+	struct active_list *tail;
+	tail = &global_active_list;
+	while(tail->Next){
+		if(strcmp(name,tail->Next->name) == 0)
+      			return tail->Next->func;
+		tail = tail->Next;
+	}
+	printf("未找到该激活函数！\n");
+	return 0;
+}
+
+static void activefunc(unsigned char *name, unsigned char *data){
+	printf("name = %s. data = %s\n",name,data);
+
+}
+
+struct active test_active = {
+	.name = "test",
+	.activefunc = activefunc,
+};
+
+int main(){
+	struct active *this;
+
+	_register_active_("test", &test_active);
+
+	this = _find_active_ ("test");
+	if(this == 0) {printf("ERROR\n"); return 0;}
+
+	this->activefunc("test","123456");
+	return 1;
+}

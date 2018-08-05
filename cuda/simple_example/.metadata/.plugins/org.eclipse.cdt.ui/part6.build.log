@@ -1,0 +1,16 @@
+20:32:17 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+Building file: ../part6.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part6.d" "../part6.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part6.o" "../part6.cu"
+Finished building: ../part6.cu
+ 
+Building target: part6
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part6"  ./part6.o   
+Finished building target: part6
+ 
+
+20:32:18 Build Finished (took 1s.528ms)
+

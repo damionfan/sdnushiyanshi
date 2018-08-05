@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include "../include/model.h"
+
+
+
+
+struct active_list{
+	u32 name[NAME_LIST];
+
+};

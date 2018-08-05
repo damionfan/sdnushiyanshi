@@ -1,0 +1,573 @@
+19:15:02 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:15:24 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+19:21:50 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:22:06 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:22:21 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+19:23:43 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+19:23:47 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:24:19 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:24:36 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:26:10 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+../part3.cu(22): error: initializer not allowed for __shared__ variable 
+
+1 error detected in the compilation of "/tmp/tmpxft_000021bd_00000000-6_part3.cpp1.ii".
+subdir.mk:18: recipe for target 'part3.o' failed
+make: *** [part3.o] Error 1
+19:26:30 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:26:42 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+19:26:49 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+19:28:52 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:29:59 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:30:44 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:31:43 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:32:00 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:32:29 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:32:54 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:33:36 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+19:33:57 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+19:35:09 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+19:39:40 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+../part4.cu(30): error: identifier "a" is undefined
+
+1 error detected in the compilation of "/tmp/tmpxft_000029ae_00000000-6_part4.cpp1.ii".
+make: *** [part4.o] Error 1
+subdir.mk:18: recipe for target 'part4.o' failed
+19:39:56 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+../part4.cu(33): error: identifier "a" is undefined
+
+1 error detected in the compilation of "/tmp/tmpxft_00002a1c_00000000-6_part4.cpp1.ii".
+subdir.mk:18: recipe for target 'part4.o' failed
+make: *** [part4.o] Error 1
+19:40:12 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+19:40:29 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+19:41:18 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:41:29 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+19:41:50 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+19:41:57 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+19:48:40 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+19:48:51 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+19:49:00 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:07 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:12 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+make: Nothing to be done for 'all'.
+19:49:18 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+make: Nothing to be done for 'all'.
+20:06:29 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+../part4.cu(85): error: identifier "cudaEventRecors" is undefined
+
+../part4.cu(86): error: identifier "cudaEventSynchroize" is undefined
+
+../part4.cu(89): error: identifier "cudaEventDestory" is undefined
+
+3 errors detected in the compilation of "/tmp/tmpxft_0000340f_00000000-6_part4.cpp1.ii".
+make: *** [part4.o] Error 1
+subdir.mk:18: recipe for target 'part4.o' failed
+20:07:47 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+Building file: ../part4.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part4.d" "../part4.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part4.o" "../part4.cu"
+Finished building: ../part4.cu
+ 
+Building target: part4
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part4"  ./part4.o   
+Finished building target: part4
+ 
+20:07:56 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+../part3.cu(91): error: identifier "cudaEventSynchroinze" is undefined
+
+At end of source: error: expected a "}"
+
+2 errors detected in the compilation of "/tmp/tmpxft_00003526_00000000-6_part3.cpp1.ii".
+subdir.mk:18: recipe for target 'part3.o' failed
+make: *** [part3.o] Error 1
+20:08:36 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+../part3.cu(91): error: identifier "cudaEventSynchroinze" is undefined
+
+1 error detected in the compilation of "/tmp/tmpxft_00003593_00000000-6_part3.cpp1.ii".
+subdir.mk:18: recipe for target 'part3.o' failed
+make: *** [part3.o] Error 1
+20:08:53 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+20:09:01 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:07 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:15 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:22 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+make: Nothing to be done for 'all'.
+20:09:53 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+Building file: ../part3.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61 -m64 -odir "." -M -o "part3.d" "../part3.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64  -x cu -o  "part3.o" "../part3.cu"
+Finished building: ../part3.cu
+ 
+Building target: part3
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -m64 -link -o  "part3"  ./part3.o   
+Finished building target: part3
+ 
+20:10:01 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+20:10:07 **** Incremental Build of configuration Debug for project part4 ****
+make all 
+make: Nothing to be done for 'all'.
+20:10:18 **** Incremental Build of configuration Debug for project part3 ****
+make all 
+make: Nothing to be done for 'all'.
+20:23:45 **** Build of configuration Debug for project part6 ****
+make all 
+Building file: ../part6.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part6.d" "../part6.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part6.o" "../part6.cu"
+Finished building: ../part6.cu
+ 
+Building target: part6
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part6"  ./part6.o   
+Finished building target: part6
+ 
+20:23:50 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+make: Nothing to be done for 'all'.
+20:24:07 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+Building file: ../part6.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part6.d" "../part6.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part6.o" "../part6.cu"
+Finished building: ../part6.cu
+ 
+Building target: part6
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part6"  ./part6.o   
+Finished building target: part6
+ 
+20:24:13 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+make: Nothing to be done for 'all'.
+20:28:48 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+Building file: ../part6.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part6.d" "../part6.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part6.o" "../part6.cu"
+../part6.cu(30): error: identifier "dev_a" is undefined
+
+subdir.mk:18: recipe for target 'part6.o' failed
+../part6.cu(30): error: identifier "dev_b" is undefined
+
+../part6.cu(54): error: "a" has already been declared in the current scope
+
+../part6.cu(54): error: "b" has already been declared in the current scope
+
+../part6.cu(65): error: identifier "dev_a" is undefined
+
+../part6.cu(66): error: identifier "dev_b" is undefined
+
+../part6.cu(52): warning: variable "a" was declared but never referenced
+
+../part6.cu(52): warning: variable "b" was declared but never referenced
+
+6 errors detected in the compilation of "/tmp/tmpxft_00004089_00000000-6_part6.cpp1.ii".
+make: *** [part6.o] Error 1
+20:29:14 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+Building file: ../part6.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part6.d" "../part6.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part6.o" "../part6.cu"
+../part6.cu(30): error: identifier "dev_a" is undefined
+
+../part6.cu(30): error: identifier "dev_b" is undefined
+
+2 errors detected in the compilation of "/tmp/tmpxft_000040ed_00000000-6_part6.cpp1.ii".
+subdir.mk:18: recipe for target 'part6.o' failed
+make: *** [part6.o] Error 1
+20:30:07 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+Building file: ../part6.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part6.d" "../part6.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part6.o" "../part6.cu"
+../part6.cu(30): error: identifier "dev_a" is undefined
+
+../part6.cu(30): error: identifier "dev_b" is undefined
+
+2 errors detected in the compilation of "/tmp/tmpxft_0000415f_00000000-6_part6.cpp1.ii".
+make: *** [part6.o] Error 1
+subdir.mk:18: recipe for target 'part6.o' failed
+20:31:01 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+Building file: ../part6.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part6.d" "../part6.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part6.o" "../part6.cu"
+Finished building: ../part6.cu
+ 
+Building target: part6
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part6"  ./part6.o   
+Finished building target: part6
+ 
+20:32:17 **** Incremental Build of configuration Debug for project part6 ****
+make all 
+Building file: ../part6.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "part6.d" "../part6.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "part6.o" "../part6.cu"
+Finished building: ../part6.cu
+ 
+Building target: part6
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "part6"  ./part6.o   
+Finished building target: part6
+ 

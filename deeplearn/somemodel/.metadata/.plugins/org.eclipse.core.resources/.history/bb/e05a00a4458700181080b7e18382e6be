@@ -1,0 +1,7 @@
+#include <stdio.h>
+#include <stdio.h>
+#include <string.h>
+#include "../include/model.h"
+
+extern u32 _register_active_(unsigned char *name,struct active *active);
+extern struct active * _find_active_(unsigned char *name);

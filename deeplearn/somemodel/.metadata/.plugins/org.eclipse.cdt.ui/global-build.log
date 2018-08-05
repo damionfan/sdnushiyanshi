@@ -1,0 +1,1197 @@
+08:52:20 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+Finished building: ../active.cu
+ 
+Building target: src
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "src"  ./active.o   
+/usr/lib/gcc/x86_64-linux-gnu/5/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+makefile:58: recipe for target 'src' failed
+collect2: error: ld returned 1 exit status
+make: *** [src] Error 1
+09:32:58 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(30): error: expected an "="
+
+../active.cu(30): error: expected a ")"
+
+../active.cu(30): error: expected an expression
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(30): error: type name is not allowed
+
+../active.cu(30): error: expected a ","
+
+../active.cu(29): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int"
+
+../active.cu(30): error: "activefunc" is not a field name
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+12 errors detected in the compilation of "/tmp/tmpxft_00001cd2_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:34:31 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int"
+
+../active.cu(30): error: "activefunc" is not a field name
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+7 errors detected in the compilation of "/tmp/tmpxft_00001d4a_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:37:14 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int"
+
+../active.cu(30): error: "activefunc" is not a field name
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+7 errors detected in the compilation of "/tmp/tmpxft_00001e3a_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:38:04 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int"
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_00001eb1_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:41:24 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int"
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_00002103_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:41:59 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned char"
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_00002162_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:42:29 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from pointer to smaller integer
+
+../active.cu(29): warning: integer conversion resulted in truncation
+
+../active.cu(29): error: a value of type "unsigned char" cannot be used to initialize an entity of type "unsigned char *"
+subdir.mk:18: recipe for target 'active.o' failed
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_000021ba_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:42:57 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned char *"
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_0000221d_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:43:20 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+subdir.mk:18: recipe for target 'active.o' failed
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+5 errors detected in the compilation of "/tmp/tmpxft_00002270_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:43:57 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(30): error: "activefunc" is not a field name
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_000022cb_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:44:39 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(30): error: "activefunc" is not a field name
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_00002332_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:45:02 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(30): error: "activefunc" is not a field name
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_0000238b_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:45:19 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(30): error: "activefunc" is not a field name
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a pointer to a bound function may only be used to call the function
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+6 errors detected in the compilation of "/tmp/tmpxft_000023e2_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:47:50 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: initialization with "{...}" expected for aggregate object
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(35): error: a value of type "const char *" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a value of type "unsigned int (*)(unsigned int *, unsigned int *)" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+5 errors detected in the compilation of "/tmp/tmpxft_00002582_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:49:03 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): error: a value of type "const char [11]" cannot be used to initialize an entity of type "char [8]"
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a value of type "unsigned int (*)(unsigned int *, unsigned int *)" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+4 errors detected in the compilation of "/tmp/tmpxft_000025f2_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:49:20 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(36): error: no suitable conversion function from "active_list" to "active_list *" exists
+
+../active.cu(37): error: a value of type "unsigned int (*)(unsigned int *, unsigned int *)" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+3 errors detected in the compilation of "/tmp/tmpxft_00002645_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:50:37 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(20): error: identifier "active" is undefined
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(37): error: a value of type "unsigned int (*)(unsigned int *, unsigned int *)" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+subdir.mk:18: recipe for target 'active.o' failed
+
+3 errors detected in the compilation of "/tmp/tmpxft_000026a9_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:51:13 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(20): error: identifier "active" is undefined
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+subdir.mk:18: recipe for target 'active.o' failed
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(37): error: a value of type "unsigned int (*)(unsigned int *, unsigned int *)" cannot be used to initialize an entity of type "unsigned int *"
+
+../active.cu(38): error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+
+3 errors detected in the compilation of "/tmp/tmpxft_0000270f_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:52:25 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(20): error: identifier "active" is undefined
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(37): error: function "activefunc" may not be initialized
+
+../active.cu(38): error: argument of type "char *" is incompatible with parameter of type "unsigned int *"
+
+../active.cu(38): error: argument of type "char *" is incompatible with parameter of type "unsigned int *"
+
+4 errors detected in the compilation of "/tmp/tmpxft_00002775_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:52:50 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(20): error: identifier "active" is undefined
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(37): error: function "activefunc1" may not be initialized
+
+../active.cu(38): error: argument of type "char *" is incompatible with parameter of type "unsigned int *"
+
+../active.cu(38): error: argument of type "char *" is incompatible with parameter of type "unsigned int *"
+
+4 errors detected in the compilation of "/tmp/tmpxft_000027ce_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:53:17 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(20): error: identifier "active" is undefined
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+subdir.mk:18: recipe for target 'active.o' failed
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(38): error: expression must be a modifiable lvalue
+
+../active.cu(39): error: argument of type "char *" is incompatible with parameter of type "unsigned int *"
+
+../active.cu(39): error: argument of type "char *" is incompatible with parameter of type "unsigned int *"
+
+4 errors detected in the compilation of "/tmp/tmpxft_0000282a_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:54:06 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(20): error: identifier "active" is undefined
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: variable "name" was declared but never referenced
+
+../active.cu(35): warning: variable "data" was declared but never referenced
+
+subdir.mk:18: recipe for target 'active.o' failed
+1 error detected in the compilation of "/tmp/tmpxft_00002888_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:54:31 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: variable "name" was declared but never referenced
+
+../active.cu(35): warning: variable "data" was declared but never referenced
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(33): warning: return type of function "main" must be "int"
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu: In function ‘unsigned int active(unsigned int*, unsigned int*)’:
+../active.cu:25:27: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘unsigned int*’ [-Wformat=]
+  printf("name = %s\n",name);
+                           ^
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu:26:27: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘unsigned int*’ [-Wformat=]
+  printf("data = %s\n",data);
+                           ^
+../active.cu: At global scope:
+../active.cu:33:15: error: ‘::main’ must return ‘int’
+make: *** [active.o] Error 1
+09:54:54 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: variable "name" was declared but never referenced
+
+../active.cu(35): warning: variable "data" was declared but never referenced
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu: In function ‘unsigned int active(unsigned int*, unsigned int*)’:
+../active.cu:25:27: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘unsigned int*’ [-Wformat=]
+  printf("name = %s\n",name);
+                           ^
+../active.cu:26:27: warning: format ‘%s’ expects argument of type ‘char*’, but argument 2 has type ‘unsigned int*’ [-Wformat=]
+  printf("data = %s\n",data);
+                           ^
+Finished building: ../active.cu
+ 
+Building target: src
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "src"  ./active.o   
+Finished building target: src
+ 
+09:55:00 **** Incremental Build of configuration Debug for project src ****
+make all 
+make: Nothing to be done for 'all'.
+09:57:33 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+subdir.mk:18: recipe for target 'active.o' failed
+../active.cu(40): error: argument of type "char *" is incompatible with parameter of type "unsigned int *"
+
+../active.cu(40): error: argument of type "char *" is incompatible with parameter of type "unsigned int *"
+
+2 errors detected in the compilation of "/tmp/tmpxft_00002aac_00000000-6_active.cpp1.ii".
+make: *** [active.o] Error 1
+09:58:20 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+Finished building: ../active.cu
+ 
+Building target: src
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "src"  ./active.o   
+Finished building target: src
+ 
+09:59:11 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+Finished building: ../active.cu
+ 
+Building target: src
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "src"  ./active.o   
+Finished building target: src
+ 
+09:59:31 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(27): warning: missing return statement at end of non-void function "active"
+
+../active.cu(29): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(34): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+Finished building: ../active.cu
+ 
+Building target: src
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "src"  ./active.o   
+Finished building target: src
+ 
+10:29:28 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "active.o" "../active.cu"
+../active.cu(28): warning: missing return statement at end of non-void function "active"
+
+../active.cu(30): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(36): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(28): warning: missing return statement at end of non-void function "active"
+
+../active.cu(30): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(35): warning: conversion from a string literal to "char *" is deprecated
+
+../active.cu(36): warning: conversion from a string literal to "char *" is deprecated
+
+Finished building: ../active.cu
+ 
+Building target: src
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "src"  ./active.o   
+Finished building target: src
+ 
+16:50:42 **** Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+Finished building: ../active.c
+ 
+Building target: src
+Invoking: NVCC Linker
+/home/fsy/cuda/bin/nvcc --cudart static --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61 -link -o  "src"  ./active.o   
+Finished building target: src
+ 
+16:50:56 **** Incremental Build of configuration Debug for project src ****
+make all 
+make: Nothing to be done for 'all'.
+16:51:00 **** Incremental Build of configuration Debug for project src ****
+make all 
+make: Nothing to be done for 'all'.
+16:53:05 **** Incremental Build of configuration Debug for project src ****
+make all 
+make: Nothing to be done for 'all'.
+16:54:26 **** Incremental Build of configuration Debug for project src ****
+make all 
+make: Nothing to be done for 'all'.
+16:55:25 **** Incremental Build of configuration Debug for project src ****
+make all 
+make: Nothing to be done for 'all'.
+17:07:22 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+In file included from ../active.c:1:0:
+../../include/active.h:4:8: error: unknown type name ‘u32’
+subdir.mk:18: recipe for target 'active.o' failed
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+        ^
+../../include/active.h:4:57: warning: ‘struct active’ declared inside parameter list
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+                                                         ^
+../../include/active.h:4:57: warning: its scope is only this definition or declaration, which is probably not what you want
+../active.c:16:8: error: unknown type name ‘u32’
+ static u32 _register_active_(unsigned char *name,struct active *active){
+        ^
+../active.c:16:12: error: conflicting types for ‘_register_active_’
+ static u32 _register_active_(unsigned char *name,struct active *active){
+            ^
+In file included from ../active.c:1:0:
+../../include/active.h:4:12: note: previous declaration of ‘_register_active_’ was here
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+            ^
+../active.c: In function ‘_register_active_’:
+../active.c:28:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  p = (struct active_list*)malloc(sizeof(struct active_list));
+                           ^
+../active.c:28:27: warning: incompatible implicit declaration of built-in function ‘malloc’
+../active.c:28:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../active.c: At top level:
+../active.c:49:24: error: static declaration of ‘_find_active_’ follows non-static declaration
+ static struct active * _find_active_(unsigned char *name){
+                        ^
+In file included from ../active.c:1:0:
+../../include/active.h:5:24: note: previous declaration of ‘_find_active_’ was here
+ extern struct active * _find_active_(unsigned char *name);
+                        ^
+make: *** [active.o] Error 1
+17:08:28 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+In file included from ../active.c:1:0:
+../../include/active.h:4:8: error: unknown type name ‘u32’
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+        ^
+subdir.mk:18: recipe for target 'active.o' failed
+../../include/active.h:4:57: warning: ‘struct active’ declared inside parameter list
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+                                                         ^
+../../include/active.h:4:57: warning: its scope is only this definition or declaration, which is probably not what you want
+../active.c:17:12: error: conflicting types for ‘_register_active_’
+ static u32 _register_active_(unsigned char *name,struct active *active){
+            ^
+In file included from ../active.c:1:0:
+../../include/active.h:4:12: note: previous declaration of ‘_register_active_’ was here
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+            ^
+../active.c: In function ‘_register_active_’:
+../active.c:29:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  p = (struct active_list*)malloc(sizeof(struct active_list));
+                           ^
+../active.c:29:27: warning: incompatible implicit declaration of built-in function ‘malloc’
+../active.c:29:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../active.c: At top level:
+../active.c:50:24: error: static declaration of ‘_find_active_’ follows non-static declaration
+ static struct active * _find_active_(unsigned char *name){
+                        ^
+In file included from ../active.c:1:0:
+../../include/active.h:5:24: note: previous declaration of ‘_find_active_’ was here
+ extern struct active * _find_active_(unsigned char *name);
+                        ^
+make: *** [active.o] Error 1
+17:08:58 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+In file included from ../active.c:1:0:
+../../include/active.h:5:8: error: unknown type name ‘u32’
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+        ^
+../../include/active.h:5:57: warning: ‘struct active’ declared inside parameter list
+subdir.mk:18: recipe for target 'active.o' failed
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+                                                         ^
+../../include/active.h:5:57: warning: its scope is only this definition or declaration, which is probably not what you want
+../active.c:17:12: error: conflicting types for ‘_register_active_’
+ static u32 _register_active_(unsigned char *name,struct active *active){
+            ^
+In file included from ../active.c:1:0:
+../../include/active.h:5:12: note: previous declaration of ‘_register_active_’ was here
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+            ^
+../active.c: In function ‘_register_active_’:
+../active.c:29:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  p = (struct active_list*)malloc(sizeof(struct active_list));
+                           ^
+../active.c:29:27: warning: incompatible implicit declaration of built-in function ‘malloc’
+../active.c:29:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../active.c: At top level:
+../active.c:50:24: error: static declaration of ‘_find_active_’ follows non-static declaration
+ static struct active * _find_active_(unsigned char *name){
+                        ^
+In file included from ../active.c:1:0:
+../../include/active.h:6:24: note: previous declaration of ‘_find_active_’ was here
+ extern struct active * _find_active_(unsigned char *name);
+                        ^
+make: *** [active.o] Error 1
+17:09:42 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+In file included from ../active.c:1:0:
+../../include/active.h:4:57: warning: ‘struct active’ declared inside parameter list
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+                                                         ^
+../../include/active.h:4:57: warning: its scope is only this definition or declaration, which is probably not what you want
+../active.c:17:12: error: conflicting types for ‘_register_active_’
+ static u32 _register_active_(unsigned char *name,struct active *active){
+            ^
+subdir.mk:18: recipe for target 'active.o' failed
+In file included from ../active.c:1:0:
+../../include/active.h:4:12: note: previous declaration of ‘_register_active_’ was here
+ extern u32 _register_active_(unsigned char *name,struct active *active);
+            ^
+../active.c: In function ‘_register_active_’:
+../active.c:29:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  p = (struct active_list*)malloc(sizeof(struct active_list));
+                           ^
+../active.c:29:27: warning: incompatible implicit declaration of built-in function ‘malloc’
+../active.c:29:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../active.c: At top level:
+../active.c:50:24: error: static declaration of ‘_find_active_’ follows non-static declaration
+ static struct active * _find_active_(unsigned char *name){
+                        ^
+In file included from ../active.c:1:0:
+../../include/active.h:5:24: note: previous declaration of ‘_find_active_’ was here
+ extern struct active * _find_active_(unsigned char *name);
+                        ^
+make: *** [active.o] Error 1
+17:10:18 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+In file included from ../active.c:1:0:
+../../include/active.h:4:1: error: multiple storage classes in declaration specifiers
+ typedef extern u32 _register_active_(unsigned char *name,struct active *active);
+ ^
+../../include/active.h:4:65: warning: ‘struct active’ declared inside parameter list
+ typedef extern u32 _register_active_(unsigned char *name,struct active *active);
+                                                                 ^
+subdir.mk:18: recipe for target 'active.o' failed
+../../include/active.h:4:65: warning: its scope is only this definition or declaration, which is probably not what you want
+../../include/active.h:5:1: error: multiple storage classes in declaration specifiers
+ typedef extern struct active * _find_active_(unsigned char *name);
+ ^
+../active.c:17:12: error: ‘_register_active_’ redeclared as different kind of symbol
+ static u32 _register_active_(unsigned char *name,struct active *active){
+            ^
+In file included from ../active.c:1:0:
+../../include/active.h:4:20: note: previous declaration of ‘_register_active_’ was here
+ typedef extern u32 _register_active_(unsigned char *name,struct active *active);
+                    ^
+../active.c: In function ‘_register_active_’:
+../active.c:29:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  p = (struct active_list*)malloc(sizeof(struct active_list));
+                           ^
+../active.c:29:27: warning: incompatible implicit declaration of built-in function ‘malloc’
+../active.c:29:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../active.c: At top level:
+../active.c:50:24: error: ‘_find_active_’ redeclared as different kind of symbol
+ static struct active * _find_active_(unsigned char *name){
+                        ^
+In file included from ../active.c:1:0:
+../../include/active.h:5:32: note: previous declaration of ‘_find_active_’ was here
+ typedef extern struct active * _find_active_(unsigned char *name);
+                                ^
+make: *** [active.o] Error 1
+
+**** Build of configuration Debug for project include ****
+
+Nothing to build for project include
+17:10:41 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+In file included from ../active.c:1:0:
+../../include/active.h:4:59: warning: ‘struct active’ declared inside parameter list
+ typedef  u32 _register_active_(unsigned char *name,struct active *active);
+                                                           ^
+../../include/active.h:4:59: warning: its scope is only this definition or declaration, which is probably not what you want
+../active.c:17:12: error: ‘_register_active_’ redeclared as different kind of symbol
+subdir.mk:18: recipe for target 'active.o' failed
+ static u32 _register_active_(unsigned char *name,struct active *active){
+            ^
+In file included from ../active.c:1:0:
+../../include/active.h:4:14: note: previous declaration of ‘_register_active_’ was here
+ typedef  u32 _register_active_(unsigned char *name,struct active *active);
+              ^
+../active.c: In function ‘_register_active_’:
+../active.c:29:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  p = (struct active_list*)malloc(sizeof(struct active_list));
+                           ^
+../active.c:29:27: warning: incompatible implicit declaration of built-in function ‘malloc’
+../active.c:29:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../active.c: At top level:
+../active.c:50:24: error: ‘_find_active_’ redeclared as different kind of symbol
+ static struct active * _find_active_(unsigned char *name){
+                        ^
+In file included from ../active.c:1:0:
+../../include/active.h:5:26: note: previous declaration of ‘_find_active_’ was here
+ typedef  struct active * _find_active_(unsigned char *name);
+                          ^
+make: *** [active.o] Error 1
+17:11:11 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+In file included from ../active.c:1:0:
+../../include/active.h:4:59: warning: ‘struct active’ declared inside parameter list
+ typedef  u32 _register_active_(unsigned char *name,struct active *active);
+                                                           ^
+../../include/active.h:4:59: warning: its scope is only this definition or declaration, which is probably not what you want
+subdir.mk:18: recipe for target 'active.o' failed
+../active.c:17:5: error: ‘_register_active_’ redeclared as different kind of symbol
+ u32 _register_active_(unsigned char *name,struct active *active){
+     ^
+In file included from ../active.c:1:0:
+../../include/active.h:4:14: note: previous declaration of ‘_register_active_’ was here
+ typedef  u32 _register_active_(unsigned char *name,struct active *active);
+              ^
+../active.c: In function ‘_register_active_’:
+../active.c:29:27: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+  p = (struct active_list*)malloc(sizeof(struct active_list));
+                           ^
+../active.c:29:27: warning: incompatible implicit declaration of built-in function ‘malloc’
+../active.c:29:27: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+../active.c: At top level:
+../active.c:50:24: error: ‘_find_active_’ redeclared as different kind of symbol
+ static struct active * _find_active_(unsigned char *name){
+                        ^
+In file included from ../active.c:1:0:
+../../include/active.h:5:26: note: previous declaration of ‘_find_active_’ was here
+ typedef  struct active * _find_active_(unsigned char *name);
+                          ^
+make: *** [active.o] Error 1
+15:24:58 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../active.c
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "active.d" "../active.c"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile  -x c -o  "active.o" "../active.c"
+Finished building: ../active.c
+ 
+Building file: ../relu.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "relu.d" "../relu.cu"
+../relu.cu:1:31: fatal error: ../incldue/active.h: No such file or directory
+subdir.mk:33: recipe for target 'relu.o' failed
+compilation terminated.
+make: *** [relu.o] Error 1
+15:25:35 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../relu.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "relu.d" "../relu.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "relu.o" "../relu.cu"
+../relu.cu(3): error: invalid combination of type specifiers
+
+../relu.cu(3): error: invalid combination of type specifiers
+
+../relu.cu(3): error: invalid combination of type specifiers
+
+../relu.cu(4): error: identifier "dlockDim" is undefined
+
+../relu.cu(9): error: invalid combination of type specifiers
+
+../relu.cu(9): error: invalid combination of type specifiers
+
+../relu.cu(9): error: invalid combination of type specifiers
+
+../relu.cu(10): error: invalid combination of type specifiers
+
+../relu.cu(11): error: invalid combination of type specifiers
+
+../relu.cu(12): error: invalid combination of type specifiers
+
+../relu.cu(12): error: identifier "sieof" is undefined
+subdir.mk:33: recipe for target 'relu.o' failed
+
+../relu.cu(23): error: identifier "GETBLOCK" is undefined
+
+../relu.cu(23): error: identifier "THREADMAXPERBLOCK" is undefined
+
+../relu.cu(23): error: argument of type "<error-type> *" is incompatible with parameter of type "float"
+
+../relu.cu(34): error: invalid combination of type specifiers
+
+../relu.cu(34): error: invalid combination of type specifiers
+
+../relu.cu(34): error: invalid combination of type specifiers
+
+../relu.cu(34): error: invalid combination of type specifiers
+
+../relu.cu(35): error: identifier "dlockDim" is undefined
+
+../relu.cu(40): error: invalid combination of type specifiers
+
+../relu.cu(40): error: invalid combination of type specifiers
+
+../relu.cu(40): error: invalid combination of type specifiers
+
+../relu.cu(40): error: invalid combination of type specifiers
+
+../relu.cu(41): error: invalid combination of type specifiers
+
+../relu.cu(42): error: invalid combination of type specifiers
+
+../relu.cu(43): error: invalid combination of type specifiers
+
+../relu.cu(44): error: invalid combination of type specifiers
+
+../relu.cu(44): error: identifier "sieof" is undefined
+
+../relu.cu(59): error: identifier "GETBLOCK" is undefined
+
+../relu.cu(59): error: identifier "THREADMAXPERBLOCK" is undefined
+
+../relu.cu(59): error: argument of type "<error-type> *" is incompatible with parameter of type "float"
+
+../relu.cu(59): error: too many arguments in function call
+
+32 errors detected in the compilation of "/tmp/tmpxft_00002519_00000000-6_relu.cpp1.ii".
+make: *** [relu.o] Error 1

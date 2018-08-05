@@ -1,0 +1,76 @@
+15:25:35 **** Incremental Build of configuration Debug for project src ****
+make all 
+Building file: ../relu.cu
+Invoking: NVCC Compiler
+/home/fsy/cuda/bin/nvcc -G -g -O0 -gencode arch=compute_61,code=sm_61  -odir "." -M -o "relu.d" "../relu.cu"
+/home/fsy/cuda/bin/nvcc -G -g -O0 --compile --relocatable-device-code=false -gencode arch=compute_61,code=compute_61 -gencode arch=compute_61,code=sm_61  -x cu -o  "relu.o" "../relu.cu"
+../relu.cu(3): error: invalid combination of type specifiers
+
+../relu.cu(3): error: invalid combination of type specifiers
+
+../relu.cu(3): error: invalid combination of type specifiers
+
+../relu.cu(4): error: identifier "dlockDim" is undefined
+
+../relu.cu(9): error: invalid combination of type specifiers
+
+../relu.cu(9): error: invalid combination of type specifiers
+
+../relu.cu(9): error: invalid combination of type specifiers
+
+../relu.cu(10): error: invalid combination of type specifiers
+
+../relu.cu(11): error: invalid combination of type specifiers
+
+../relu.cu(12): error: invalid combination of type specifiers
+
+../relu.cu(12): error: identifier "sieof" is undefined
+subdir.mk:33: recipe for target 'relu.o' failed
+
+../relu.cu(23): error: identifier "GETBLOCK" is undefined
+
+../relu.cu(23): error: identifier "THREADMAXPERBLOCK" is undefined
+
+../relu.cu(23): error: argument of type "<error-type> *" is incompatible with parameter of type "float"
+
+../relu.cu(34): error: invalid combination of type specifiers
+
+../relu.cu(34): error: invalid combination of type specifiers
+
+../relu.cu(34): error: invalid combination of type specifiers
+
+../relu.cu(34): error: invalid combination of type specifiers
+
+../relu.cu(35): error: identifier "dlockDim" is undefined
+
+../relu.cu(40): error: invalid combination of type specifiers
+
+../relu.cu(40): error: invalid combination of type specifiers
+
+../relu.cu(40): error: invalid combination of type specifiers
+
+../relu.cu(40): error: invalid combination of type specifiers
+
+../relu.cu(41): error: invalid combination of type specifiers
+
+../relu.cu(42): error: invalid combination of type specifiers
+
+../relu.cu(43): error: invalid combination of type specifiers
+
+../relu.cu(44): error: invalid combination of type specifiers
+
+../relu.cu(44): error: identifier "sieof" is undefined
+
+../relu.cu(59): error: identifier "GETBLOCK" is undefined
+
+../relu.cu(59): error: identifier "THREADMAXPERBLOCK" is undefined
+
+../relu.cu(59): error: argument of type "<error-type> *" is incompatible with parameter of type "float"
+
+../relu.cu(59): error: too many arguments in function call
+
+32 errors detected in the compilation of "/tmp/tmpxft_00002519_00000000-6_relu.cpp1.ii".
+make: *** [relu.o] Error 1
+
+15:25:36 Build Finished (took 925ms)
+

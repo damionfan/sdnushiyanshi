@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;layers/new_layers&apos; to &apos;new_layers.cu&apos;" description="Rename resource &apos;new_layers&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="new_layers" name="new_layers.cu" stamp="1531981382023" updateReferences="true"/>
+</session>

@@ -1,0 +1,2 @@
+#include <stdio.h>
+extern u32 _register_active_(unsigned char *name,struct active *active)

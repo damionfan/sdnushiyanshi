@@ -1,0 +1,25 @@
+#include <algorithm>
+#include <vector>
+
+//
+#include "caffe/layers/new_layers.hpp"
+#include "caffe/util/math_functions.hpp"
+
+
+namespace caffe {
+
+	template <typename Dtype>
+	void Newlayers<Dtype>::LayersSetup(
+		const vector<Blob<Dtype>*>& bottom,const vector<Blob<Dtype>*>& top){
+		NeuronLayer<Dtype>::LayerSetup(bottom, top);
+		
+		top[0]->Reshape(bottom[0]->shape());
+	}
+	
+	template <typename Dtype>
+	void 	Newlayers<Dtype>::Forward_cpu(
+	const vector<Blob<Dtype>*>& bottom,
+	const vector<Blob<Dtype>*>& top) {
+	}
+
+}

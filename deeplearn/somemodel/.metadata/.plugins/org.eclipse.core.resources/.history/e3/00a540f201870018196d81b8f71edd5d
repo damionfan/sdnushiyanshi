@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "../include/model.h"
+
+
+
+
+struct active_list{
+	u32 name[NAME_LIST];
+	u32 *activefnc(u32 *name,u32 *data);
+	u32 *active_list;
+};
+
+u32 insert_activefunc){
+
+	return 0;
+}
