@@ -1,0 +1,258 @@
+%%%
+%A4 小5字 单列
+
+\documentclass[a4paper,11pt,onecolumn,towside]{article}
+
+\usepackage{CJK}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amsfonts,amssymb,graphicx}    % EPS 图片支持
+\usepackage{subfigure}   % 使用子图形
+\usepackage{indentfirst} % 中文段落首行缩进
+\usepackage{bm}          % 公式中的粗体字符（用命令\boldsymbol）
+\usepackage{multicol}    % 正文双栏
+\usepackage{indentfirst} % 中文首段缩进
+\usepackage{picins}      % 图片嵌入段落宏包 比如照片
+\usepackage{abstract}    % 2栏文档，一栏摘要及关键字宏包
+\usepackage{caption}
+\usepackage{subfig}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%lengths
+%下面的命令冲定义 页面边距，使其符合中文刊习惯。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addtolength{\topmargin}{-54pt}
+\setlength{\oddsidemargin}{-0.9cm}
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{17.00cm}
+\setlength{\textheight}{24.00cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   定义标题格式 包括title author
+%   affiliation，email等
+%   任何用到中文的地方 用下面的 CJK包裹起来
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\baselinestretch}{1.1} %定义行间距
+\parindent 22pt
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   标题等信息
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{CJK}{GBK}{song}
+\title{\huge{一种卷积计算的优化方法}}
+\author{范胜玉\\[2pt]
+\normalsize
+(山东师范大学信息科学与工程学院) \\[2pt]}
+\date{}
+\end{CJK}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ %首页页眉页脚定义
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancypagestyle{plain}{
+\fancyhf{}
+\lhead{第~XX~卷\quad 第~X~期\\
+\scriptsize{XXXX~年~XX~月}}
+\chead{\centering{测试\\
+\scriptsize{\textbf{An optimization method for convolution calculation}}}}
+\rhead{Vol. XX, No. XX\\
+\scriptsize{August, 2018}}
+\lfoot{}
+\cfoot{}
+\rfoot{}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%首页根据奇偶页不同设置页眉页脚
+%%R,C,L分贝代表左中右，O,E代表奇偶页
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[RE]{第~XX~卷}
+%\fancyhead[CE]{测试}
+%\fancyhead[LE,RO]{\thepage}
+%\fancyhead[CO]{范胜玉：一种卷积计算的优化方法}
+%\fancyhead[LO]{第~X~期}
+%\lfoot{}
+%\cfoot{}
+%\rfoot{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 正文两栏环境不允许float环境，比如 figure, table。所以重新定义
+% figure，使之可以浮动到你想要的位置。table也同样，把figure改为
+% table就可以。
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{figurehere}
+  {\def\@captype{figure}}
+  {}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  文章正文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\begin{CJK*}{GBK}{song}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  自定义命令
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 此行使文献引用以上标形式显示
+\newcommand{\supercite}[1]{\textsuperscript{\cite{#1}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  显示title，并设页码为空（按杂志社要求）
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  中文摘要
+%  调整摘要、关键词，中图分类号的页边距
+%  中英文同时调整
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\oddsidemargin}{ 1cm}  % 3.17cm - 1 inch
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{13.50cm}
+\vspace{-.8cm}
+\begin{center}
+\parbox{\textwidth}{
+\CJKfamily{hei}摘~~~要\quad \CJKfamily{kai}对于卷积网络中卷积层计算的优化\\
+\CJKfamily{hei}关键词\quad\CJKfamily{kai}GPU~卷积神经网络~ CUDA~ 卷积展开~矩阵乘法 ~纹理内存~ 稀疏矩阵\\
+\CJKfamily{hei}中图分类号\quad TGXXX\qquad  \CJKfamily{hei}文献标识码\quad x}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  正文由此开始－－－－－－－－－－－－－－－－－－－－－－－－－
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  恢复正文页边距
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\oddsidemargin}{-.5cm}  % 3.17cm - 1 inch
+\setlength{\evensidemargin}{\oddsidemargin}
+\setlength{\textwidth}{17.00cm}
+\CJKfamily{song}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  分栏开始
+\begin{multicols}{2}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand\thesection{\arabic{section}}
+\section{卷积计算方法}
+在CNN模型中，网络的主体部分是由卷积层构成的。因此，加快卷积层的计算对于整个网络的性能至关重要。目前，卷积计算主要采用间接计算的的方式，主要由以下三种方式：
+\begin{itemize}
+  \item 卷积展开\cite{im2col+GEMM}
+  \item 时域卷积转换到频域计算\cite{FFT}
+  \item Winograd域计算\cite{Winograd}
+\end{itemize}
+\subsection{卷积展开}
+论文\cite{im2col+GEMM}中介绍了如何将卷积运算转换成为矩阵的乘法运算，利用成熟的cuBLAS库在GPU环境中高效的进行卷积运算。
+$$ \tiny
+    A=
+    \left\{
+    \begin{matrix}
+    a_{00} & a_{01} & a_{02} & a_{03} \\
+    a_{10} & a_{11} & a_{12} & a_{13} \\
+    a_{20} & a_{21} & a_{22} & a_{23} \\
+    a_{30} & a_{31} & a_{32} & a_{33}
+    \end{matrix}
+    \right\}
+    B= \left\{
+    \begin{matrix}
+    b_{00} & b_{01} \\
+    b_{10} & b_{11} \\
+    \end{matrix}
+    \right\}
+$$
+$$
+A  \ast B    =
+$$
+$$\tiny
+    \left\{
+    \begin{matrix}
+    \begin{matrix}a_{00}*b_{00}+a_{01}*b_{01} \\ +a_{10}*b_{10} \\ +a_{11}*b_{11} \end{matrix} & \begin{matrix}a_{01}*b_{00}+a_{02}*b_{01} \\ +a_{11}*b_{10} \\ +a_{12}*b_{11} \end{matrix} & \begin{matrix}a_{02}*b_{00}+a_{03}*b_{01} \\ +a_{12}*b_{10} \\ +a_{13}*b_{11}\end{matrix} \\ \\ \\
+    \begin{matrix}a_{10}*b_{00}+a_{11}*b_{01} \\ +a_{20}*b_{10} \\ +a_{21}*b_{11} \end{matrix} & \begin{matrix}a_{11}*b_{00}+a_{12}*b_{01} \\ +a_{21}*b_{10} \\ +a_{22}*b_{11} \end{matrix} & \begin{matrix}a_{12}*b_{00}+a_{13}*b_{01} \\ +a_{22}*b_{10}  \\ +a_{23}*b_{11}\end{matrix} \\ \\  \\
+    \begin{matrix}a_{20}*b_{00}+a_{21}*b_{01} \\ +a_{30}*b_{10} \\ +a_{31}*b_{11} \end{matrix} & \begin{matrix}a_{21}*b_{00}+a_{22}*b_{01} \\ +a_{31}*b_{10} \\ +a_{32}*b_{11} \end{matrix} & \begin{matrix}a_{22}*b_{00}+a_{23}*b_{01} \\ +a_{32}*b_{10} \\ +a_{33}*b_{11}\end{matrix}
+    \end{matrix}
+    \right\} \\
+$$
+$$ \small
+\text{直接计算卷积~} \\
+\text{步长为1~ 无填充} \\
+$$
+\begin{CJK*}{GBK}{song}
+输入特征图A以列优先的方式，按照卷积计算的方式进行转换得到矩阵$A_{l}$
+\end{CJK*}
+$$\tiny
+    \left\{
+    \begin{matrix}
+    a_{00} & a_{01} & a_{02} & a_{03} \\
+    a_{10} & a_{11} & a_{12} & a_{13} \\
+    a_{20} & a_{21} & a_{22} & a_{23} \\
+    a_{30} & a_{31} & a_{32} & a_{33}
+    \end{matrix}
+    \right\} \Longrightarrow
+    \left\{
+    \begin{matrix}
+    a_{00}&a_{01}&a_{02}&a_{10}&a_{11}&a_{12}\\
+    a_{01}&a_{02}&a_{03}&a_{11}&a_{12}&a_{13}\\
+    a_{10}&a_{11}&a_{12}&a_{20}&a_{21}&a_{22}\\
+    a_{11}&a_{12}&a_{13}&a_{21}&a_{22}&a_{23}\\
+    \end{matrix}
+    \right\}
+$$
+
+同理可以得到卷积核B的转换矩阵$B_{l}$
+$$\tiny
+    \left\{
+    \begin{matrix}
+    \begin{matrix}
+    b_{00} & b_{01} \\
+    b_{10} & b_{11} \\
+    \end{matrix}
+    \end{matrix}
+    \right\} \Longrightarrow
+    \left\{
+    \begin{matrix}
+    b_{00}&b_{01}&b_{10}&b_{11}
+    \end{matrix}
+    \right\}
+$$
+将输入特征图A和卷积核B转换成为以列优先的矩阵$A_{l}$和$ B_{l}$,那么A$\ast$B$\Longrightarrow$ $A_{l} \times B_{l}$。这种计算方法将在CPU环境下的多层循环卷积计算方法转变成为矩阵乘法，减少了循环的次数。同样在GPU环境中，利用成熟的cuBLAS库对矩阵进行乘法运算。无论是在CPU 还是在GPU环境下，这种计算方式均增加了运算速度，减少了计算时间。在早期的cuDNN\cite{im2col+GEMM}版本以及caffe\cite{jia2014caffe} 框架中都用到了这种卷积计算方法。由于这种卷积计算方式操作简单，计算速度快，使得其在卷积神经网络相关的工程中得到了广泛的利用\cite{darknet13}\cite{jia2014caffe}，因此如何对此算法的进行更进一步的优化研究具有深远的意义。将卷积运算转换成为矩阵乘法计算的方式提高了计算速度，但是会生成中间矩阵，增加了内存的消耗，为了减少内存的消耗的同时保证计算速度，论文\cite{MEC} 提出了MEC（MEC: Memory-efficient Convolution for Deep Neural Network）算法，使得在计算速度有一定的保障的同时，尽可能的减少了对内存的消耗。本文基于MEC\cite{MEC}算法对卷积计算进行了部分优化。
+\subsection{时域卷积转换到频域计算}
+众所周知根据卷积定理，空间域中的卷积计算经过傅里叶变换可以转成频域中的点积运算，公式如下所示：
+$$
+f \ast g = \mathcal{F}^{-1}{(\mathcal{F}{(f)}\times \mathcal{F}{(g)})}
+$$
+
+
+
+为适合神经网络中的卷积层计算，将所需要的所有的矩阵均进行傅里叶变换，并将在空域中的卷积计算在频域做乘积计算。通过重用频域矩阵来补偿空域到频域造成的损耗。\cite{FFT}。由于频域转换并行化的限制导致只有在卷积核比较大的时候加速效果才比较明显，2014年Facebook提出新的空域到频域转换库fbfft，其在寄存器和并行计算方面对频域转换速度进行了优化，使得频域计算得性能得到了提升，并在小卷积核上也起到了加速的效果\cite{FBFFT}。
+\subsection{Winograd域计算}
+新版本的cuDNN卷积计算方法。
+\section{卷积计算优化}
+卷积层在卷积神经网络中扮演着重要的角色，因此优化卷积层的计算是非常重要的任务。
+MEC算法\cite{MEC}是在卷积展开的基础上对于卷积计算内存做了优化，使得原有的卷积展开算法所占内存减小。其卷积计算过程如下:
+
+
+  % Requires \usepackage{graphicx}
+
+\includegraphics[width=8cm]{1.png} \\
+\includegraphics[width=8cm]{2.png} \\
+
+由图对比可以看出，卷积展开所产生的中间矩阵的大小明显大于MEC算法所产生的中间矩阵，同样依靠矩阵乘法运算可以得到卷积结果。相对于卷积展开算法，MEC算法减少了卷积计算所耗费的内存，但是由卷积运算的一次乘法运算变成了多次卷积运算，增加了计算量。
+论文\cite{RLU}所提出的的通过RELU增加输入特征图的稀疏性，因为输入特征图中存在很多0，而0值的计算对于卷积结果没有影响，所以不去计算位为0的的数值，以减少乘法的运算次数。论文仅提出了CPU版本，而大多数CNN计算均在GPU 等计算芯片上计算，其算法的实用性不高。结合MEC 算法提出“利用稀疏矩阵存储中间矩阵，将中间矩阵中的单元矩阵计算时存储为列向量，进行矩阵乘法运算”，由于在卷积计算过中存储数值0对于卷积的计算毫无意义，所以将稀疏矩阵利用CSR方式存储，减少了内存大小，以MEC计算方式为基础，使得卷积计算变成矩阵乘法计算，在计算时利用CUDA对稀疏矩阵计算进行优化，将rowptr,colidx,data,vc存储在纹理内存上减少计算访问时间。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\small
+\renewcommand\refname{参考文献}
+\bibliographystyle{plain}
+\bibliography{refence}
+\end{multicols}
+\clearpage
+\end{CJK*}
+\end{document}
+
